@@ -1,0 +1,66 @@
+List of some simple test commands
+
+at
+OK
+AT+CPIN?
++CPIN: READY
+
+OK
+AT+CSQ
++CSQ: 26,99
+
+OK
+AT+CEREG?
++CEREG: 0,1
+
+OK
+AT+COPS?
++COPS: 0,0,"VIVACOM",7
+
+OK
+AT+QCFG="nwscanmode"
++QCFG: "nwscanmode",3
+
+OK
+AT+QCFG="band"
++QCFG: "band",0x0,0x80800d5
+
+OK
+AT+QNWINFO
++QNWINFO: "FDD LTE","28403","LTE BAND 3",1800
+
+OK
+AT+QPING=1,"8.8.8.8"
+OK
+
++QPING: 0,"8.8.8.8",32,100,118
+
++QPING: 0,"8.8.8.8",32,25,118
+
++QPING: 0,"8.8.8.8",32,25,118
+
++QPING: 0,"8.8.8.8",32,20,118
+
++QPING: 0,4,4,0,20,100,42
+
+AT+QHTTPCFG="contextid",1
+OK
+AT+QHTTPURL=23,80
+CONNECT
+
+https://www.google.com/
+
+OK
+AT+QHTTPGET=80
+OK
+
++QHTTPGET: 0,200
+AT+QGDCNT?
++QGDCNT: 1569,28517
+
+AT+QPOWD=1
+OK
+
++QIURC: "pdpdeact",1
+
+POWERED DOWN
